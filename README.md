@@ -16,17 +16,17 @@ Para explorar y utilizar este proyecto, sigue los siguientes pasos:
 
 ### Con MATLAB
 
-1. (Opcional) Ejecuta `scripts/mostrar_mapa_mexico.m` para visualizar el mapa de México. Este script mejora visualmente el mapa original enviado por el profesor.
-2. Ejecuta `scripts/crear_dataset_info.m` para exportar los datos del mapa a un archivo CSV. Puedes encontrar el archivo generado en `files/dataset_ciudades_mexico.csv`.
+1. (Opcional) Ejecuta `scripts/show_initial_mexico_map.m` para visualizar el mapa de México. Este script mejora visualmente el mapa original enviado por el profesor.
+2. Ejecuta `scripts/create_dataset_mexico_cities.m` para exportar los datos del mapa a un archivo CSV. Puedes encontrar el archivo generado en `files/dataset_ciudades_mexico.csv`.
 
 ### Con Python
 
-3. Ejecuta `scripts/obtener_distancias.py` para calcular la distancia en kilómetros entre cada par de ciudades. Al ejecutar este script, se genera automaticamente el archivo `scripts/TSP/data_cities.py` que contiene la matriz de distancias entre las ciudades. Este archivo es necesario para el análisis del TSP.
-4. Ejecuta `scripts/TSP/tsp.py` para realizar el análisis del TSP. Los resultados se mostrarán en la consola y el mapa generado se abrirá automáticamente desde `files/mapa_ciudades_mexico.html`.
+3. Ejecuta `scripts/get_cities_distances.py` para calcular la distancia en kilómetros entre cada par de ciudades. Al ejecutar este script, se genera automaticamente el archivo `scripts/TSP/data_cities.py` que contiene la matriz de distancias entre las ciudades. Este archivo es necesario para el análisis del TSP.
+4. Ejecuta `scripts/TSP/main.py` para realizar el análisis del TSP. Los resultados se mostrarán en la consola y el mapa generado se abrirá automáticamente desde `files/mapa_ciudades_mexico.html`.
 
 ### Ejecución Automática
 
-Si deseas ejecutar el análisis del TSP sin realizar los pasos intermedios manualmente, simplemente ejecuta `scripts/TSP/tsp.py`. Este script automatiza todo el proceso, muestra los resultados en consola y genera un mapa visual en HTML que se abrirá automáticamente.
+Si deseas ejecutar el análisis del TSP sin realizar los pasos intermedios manualmente, simplemente ejecuta `scripts/TSP/main.py`. Este script automatiza todo el proceso, muestra los resultados en consola y genera un mapa visual en HTML que se abrirá automáticamente.
 
 ## Contacto
 
