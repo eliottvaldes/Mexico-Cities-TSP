@@ -6,9 +6,9 @@ from show_results_tsp import create_map
 # ==============================================================    
 
 # define global configuration variables
-population_size = 200
+population_size = 350
 mutation_prob = 0.05
-generations = 250
+generations = 200
 size_individual = len(distances)
 algorithm_executions = 10
 start_city = 4
@@ -47,7 +47,7 @@ print(f'{"*"*50}', end='\n\n')
 for i in range(algorithm_executions):
     print(f'\n{"-"*50}')
     print(f'Execution: {i+1}')
-    result = hybrid_algorithm([], population_size, size_individual, start_city, generations, 1, mutation_prob)
+    result = hybrid_algorithm([], population_size, size_individual, start_city, generations, mutation_prob)
     print(f'Best Route Found: {result.get("individual")} => VOF {result.get("vof")}')
     print(f"Cities: {' -> '.join([city_names[city] for city in result.get('individual')])}")
     global_results.append(result)
