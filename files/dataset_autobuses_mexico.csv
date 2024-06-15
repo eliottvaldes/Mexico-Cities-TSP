@@ -1,0 +1,33 @@
+id,estado,ciudad,nombre_recinto,latitud,longitud
+1,Aguascalientes,Aguascalientes,Terminal Central de Autobuses de Aguascalientes,21.908472,-102.298722
+2,Baja California,Mexicali,Central de Autobuses de Mexicali,32.636931,-115.469034
+3,Baja California Sur,La Paz,Terminal La Paz,22.896272,-109.919816
+4,Campeche,Campeche,Terminal de Autobuses de Campeche,19.845183,-90.532351
+5,Chiapas,Tuxtla Gutiérrez,Terminal de Autobuses de Tuxtla Gutiérrez,16.753555,-93.126069
+6,Chihuahua,Chihuahua,Central de Autobuses de Chihuahua,28.636416,-106.082417
+7,Ciudad de México,Ciudad de México,Terminal Central del Norte,19.49083,-99.132119
+8,Coahuila,Saltillo,Terminal de Autobuses de Saltillo,25.424348,-100.998282
+9,Colima,Colima,Terminal de Autobuses de Colima,19.246731,-103.724844
+10,Durango,Durango,Terminal de Autobuses de Pasajeros de Durango,24.024237,-104.672882
+11,Estado de México,Toluca,Terminal de Autobuses de Toluca,19.288668,-99.646662
+12,Guanajuato,Guanajuato,Central de Autobuses de Guanajuato,21.006954,-101.256019
+13,Guerrero,Chilpancingo,Terminal de Autobuses de Chilpancingo,17.547356,-99.508716
+14,Hidalgo,Pachuca,Terminal de Autobuses de Pachuca,20.117015,-98.739157
+15,Jalisco,Guadalajara,Central de Autobuses de Guadalajara,20.651767,-103.379349
+16,Michoacán,Morelia,Terminal de Autobuses de Morelia,19.713367,-101.195168
+17,Morelos,Cuernavaca,Terminal de Autobuses de Cuernavaca,18.919365,-99.223459
+18,Nayarit,Tepic,Terminal de Autobuses de Tepic,21.509162,-104.891361
+19,Nuevo León,Monterrey,Central de Autobuses de Pasajeros de Monterrey,25.675501,-100.313406
+20,Oaxaca,Oaxaca de Juárez,Terminal de Autobuses de Primera Clase de Oaxaca,17.066759,-96.726027
+21,Puebla,Puebla,Terminal de Autobuses de Puebla,19.055663,-98.236612
+22,Querétaro,Santiago de Querétaro,Central de Autobuses de Querétaro,20.595369,-100.368289
+23,Quintana Roo,Cancún,Terminal de Autobuses de Cancún,21.161768,-86.828892
+24,San Luis Potosí,San Luis Potosí,Terminal Terrestre de Autobuses de San Luis Potosí,22.167774,-100.974862
+25,Sinaloa,Culiacán,Central de Autobuses de Culiacán,24.801072,-107.384634
+26,Sonora,Hermosillo,Central de Autobuses de Hermosillo,29.089492,-110.957327
+27,Tabasco,Villahermosa,Terminal de Autobuses de Villahermosa,17.999774,-92.927041
+28,Tamaulipas,Ciudad Victoria,Central de Autobuses de Ciudad Victoria,23.735318,-99.144971
+29,Tlaxcala,Tlaxcala de Xicohténcatl,Terminal de Autobuses de Tlaxcala,19.314845,-98.237012
+30,Veracruz,Xalapa,Terminal de Autobuses de Xalapa,19.527445,-96.923421
+31,Yucatán,Mérida,Terminal de Autobuses de Primera Clase de Mérida,20.970959,-89.622689
+32,Zacatecas,Zacatecas,Terminal de Autobuses Zacatecas,22.776575,-102.555441
