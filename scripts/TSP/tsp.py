@@ -17,61 +17,52 @@ def generate_individual(size_individual: int, start_city: int = 0) -> list:
     return cities
 
 
-def hybrid_algorithm(population: list = [], population_size: int = 50, size_individual: int = 11, start_city: int = 0, generations: int = 200, generations_iter: int = 0, mutation_prob: float = 0.05) -> list:
+def hybrid_algorithm(population: list = None, population_size: int = 50, size_individual: int = 11, start_city: int = 0, generations: int = 200, mutation_prob: float = 0.05) -> dict:
+    if population is None:
+        population = []
     
-    if(generations_iter == 1):
-        # generate initial population using 50 individuals
+    # initialize the population only if it is the first time
+    if not population:
         population = [generate_individual(size_individual, start_city) for i in range(population_size)]
-        
-    # evaluate each individual using the route distance
-    vof_initial_population = [(calculate_route_distance(individual, distances)) for individual in population]
+        vof_initial_population = [calculate_route_distance(individual, distances) for individual in population]
     
-    # =========== GENERATE THE FAMILY ===========
-    # define a variable to store the child
-    family = []
-    # get the children from the parents using edge recombination algorithm
-    for i in range(int(len(population)/2)):
-        # ----  SELECTION ----
-        p1 = numpy.random.randint(len(population))
-        p2 = numpy.random.randint(len(population))
+    # execute the algorithm for a given number of generations
+    for generation in range(generations):
+        family = []
         
-        # ---- ER Algorithm ----
-        # get the children from the parents using edge recombination algorithm
-        child = create_child(population[p1], population[p2], size_individual, start_city)
-                
-        # ---- EVALUATION ----
-        # define the family
-        local_family_individuals = [population[p1], population[p2], child]
-        # define a list of the vof of the family
-        local_family_vof = [vof_initial_population[p1], vof_initial_population[p2], calculate_route_distance(child, distances)]
-        # get the index of the worst element
-        worst_individual_index = numpy.argmax(local_family_vof)
-        
-        # push each individual to the family list except the worst one
-        for j in range(3):
-            if j != worst_individual_index:
-                family.append(local_family_individuals[j])
+        # generate the family
+        for i in range(int(len(population)/2)):
+            p1 = numpy.random.randint(len(population))
+            p2 = numpy.random.randint(len(population))
+            child = create_child(population[p1], population[p2], size_individual, start_city)
 
-    # =========== MUTATION ===========
-    for i, individual in enumerate(family):
-        if numpy.random.rand() < mutation_prob:
-            # replace the family individual with the new one
-            family[i] = generate_individual(size_individual, start_city)
+            local_family_individuals = [population[p1], population[p2], child]
+            local_family_vof = [vof_initial_population[p1], vof_initial_population[p2], calculate_route_distance(child, distances)]
+            worst_individual_index = numpy.argmax(local_family_vof)
+
+            # Add to the family all except the worst
+            for j in range(3):
+                if j != worst_individual_index:
+                    family.append(local_family_individuals[j])
+        
+        # Mutation of the family
+        for i, individual in enumerate(family):
+            if numpy.random.rand() < mutation_prob:
+                family[i] = generate_individual(size_individual, start_city)
+        
+        # Prepare the next generation
+        population = family
+        vof_initial_population = [calculate_route_distance(individual, distances) for individual in population]
     
-    ## repeat using recursion. valdidate the stop condition is the same as the number of generations
-    if generations_iter < generations:
-        return hybrid_algorithm(family, population_size, size_individual, start_city, generations, generations_iter + 1, mutation_prob)
-    else:
-        # get the vof of the family to return the best individual
-        vof_family = [(calculate_route_distance(individual, distances)) for individual in family]
-        # get the best individual index
-        best_individual_index = numpy.argmin(vof_family)
-        
-        return {
-            'individual': family[best_individual_index],
-            'vof': vof_family[best_individual_index]
-        }
-        
+    # Find the best individual at the end of all generations
+    vof_family = [calculate_route_distance(individual, distances) for individual in family]
+    best_individual_index = numpy.argmin(vof_family)
+    
+    return {
+        'individual': family[best_individual_index],
+        'vof': vof_family[best_individual_index]
+    }          
+                 
     
 # ---------------FUNCTIONS FOR ROUTE CALCULATION ----------------
 # function to calculate the total distance of a specific route, including the return to the starting point
