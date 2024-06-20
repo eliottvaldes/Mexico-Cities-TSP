@@ -28,7 +28,7 @@ def read_csv_to_dict(folder, filename):
 
 def save_dict_to_file(data, folder):
     # Construye la ruta al archivo de salida
-    output_filepath = os.path.join(folder, 'data.py')
+    output_filepath = os.path.join(folder, 'data_airports.py')
     
     # Escribe el diccionario en el archivo con formato adecuado
     with open(output_filepath, 'w', encoding='utf-8') as file:
@@ -41,7 +41,7 @@ def save_dict_to_file(data, folder):
 
 # Define la ruta al folder y el nombre del archivo CSV
 folder = '../files'
-filename = 'dataset_autobuses_mexico.csv'
+filename = 'dataset_aeropuertos_mexico.csv'
 
 # Llama a la función principal
 read_csv_to_dict(folder, filename)

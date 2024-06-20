@@ -4,7 +4,7 @@ import io
 
 
 folder = '../files'
-filename = 'dataset_ciudades_mexico.csv'
+filename = 'dataset_aeropuertos_mexico.csv'
 
 # read the data from a CSV file
 df = pd.read_csv(f'{folder}/{filename}')
@@ -30,7 +30,7 @@ for i in df.index:
 
 
 # write the distances and city names to a Python file
-with open("TSP/data_cities.py", "w") as file:
+with open("TSP/data_aeropuertos.py", "w") as file:
     file.write("distances = {\n")
     for i in distances:
         file.write(f"    {i}: {distances[i]},\n")

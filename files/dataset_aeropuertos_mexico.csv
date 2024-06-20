@@ -1,0 +1,33 @@
+id,estado,ciudad,nombre_recinto,latitud,longitud
+1,Aguascalientes,Aguascalientes,Aeropuerto Internacional Lic. Jesus Teran Peredo (AGU),21.7056,-102.3178
+2,Baja California,Tijuana,Aeropuerto Internacional de Tijuana (TIJ),32.5411,-116.9702
+3,Baja California Sur,San Jose del Cabo,Aeropuerto Internacional de Los Cabos (SJD),23.1518,-109.721
+4,Campeche,Campeche,Aeropuerto Internacional de Campeche (CPE),19.8167,-90.5003
+5,Chiapas,Tuxtla Gutierrez,Aeropuerto Internacional Angel Albino Corzo (TGZ),16.563,-93.0267
+6,Chihuahua,Chihuahua,Aeropuerto Internacional General Roberto Fierro Villalobos (CUU),28.702,-105.964
+7,Ciudad de Mexico,Ciudad de Mexico,Aeropuerto Internacional Benito Juarez (MEX),19.4361,-99.0719
+8,Coahuila,Saltillo,Aeropuerto Internacional Plan de Guadalupe (SLW),25.5495,-100.9297
+9,Colima,Colima,Aeropuerto Nacional Licenciado Miguel de la Madrid (CLQ),19.277,-103.577
+10,Durango,Durango,Aeropuerto Internacional General Guadalupe Victoria (DGO),24.1242,-104.528
+11,Guanajuato,Silao,Aeropuerto Internacional de Guanajuato (BJX),20.9935,-101.48
+12,Guerrero,Acapulco,Aeropuerto Internacional General Juan N. Alvarez (ACA),16.7571,-99.7537
+13,Hidalgo,Pachuca,Aeropuerto Nacional de Pachuca (PCA),20.0939,-98.7827
+14,Jalisco,Guadalajara,Aeropuerto Internacional Miguel Hidalgo y Costilla (GDL),20.5218,-103.3112
+15,Estado de Mexico,Toluca,Aeropuerto Internacional Lic. Adolfo Lopez Mateos (TLC),19.3371,-99.566
+16,Michoacan,Morelia,Aeropuerto Internacional General Francisco J. Mugica (MLM),19.8501,-101.025
+17,Morelos,Cuernavaca,Aeropuerto Internacional General Mariano Matamoros (CVJ),18.8347,-99.2613
+18,Nayarit,Tepic,Aeropuerto Nacional Amado Nervo (TPQ),21.4195,-104.8421
+19,Nuevo Leon,Monterrey,Aeropuerto Internacional General Mariano Escobedo (MTY),25.7785,-100.1071
+20,Oaxaca,Oaxaca,Aeropuerto Internacional Xoxocotlan (OAX),16.9999,-96.7266
+21,Puebla,Huejotzingo,Aeropuerto Internacional Hermanos Serdan (PBC),19.1581,-98.3714
+22,Queretaro,Queretaro,Aeropuerto Intercontinental de Queretaro (QRO),20.6173,-100.1867
+23,Quintana Roo,Cancun,Aeropuerto Internacional de Cancun (CUN),21.0365,-86.877
+24,San Luis Potosi,San Luis Potosi,Aeropuerto Internacional Ponciano Arriaga (SLP),22.2555,-100.93
+25,Sinaloa,Culiacan,Aeropuerto Internacional de Culiacan (CUL),24.7645,-107.4743
+26,Sonora,Hermosillo,Aeropuerto Internacional General Ignacio Pesqueira Garcia (HMO),29.0959,-111.0489
+27,Tabasco,Villahermosa,Aeropuerto Internacional Carlos Rovirosa Perez (VSA),17.9967,-92.8174
+28,Tamaulipas,Tampico,Aeropuerto Internacional General Francisco Javier Mina (TAM),22.2964,-97.8659
+29,Tlaxcala,Tlaxcala,Aeropuerto Nacional de Tlaxcala (TXA),19.4153,-98.1112
+30,Veracruz,Veracruz,Aeropuerto Internacional General Heriberto Jara (VER),19.1448,-96.1873
+31,Yucatan,Merida,Aeropuerto Internacional Manuel Crescencio Rejon (MID),20.937,-89.6577
+32,Zacatecas,Calera de Victor Rosales,Aeropuerto Internacional General Leobardo C. Ruiz (ZCL),22.8972,-102.686
